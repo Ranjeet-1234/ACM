@@ -1,0 +1,195 @@
+.bg-div-of-medical-bodies{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  gap: 60px;
+
+}
+
+.container-medical-bodiess{
+  background-color: rgb(227, 227, 227);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+  width: 80%;
+  height: 100%;
+  margin-top: -60px;
+
+}
+
+.main-sangli-tilte{
+  
+  height: 40px;
+  width: 100%;
+  font-size: 25px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(13, 10, 231);
+  box-shadow: 20px 20px 20px rgb(122, 121, 121);
+  color: white;
+  border-radius: 20px;
+}
+
+.area-in-the-sangli{
+ 
+  height: 30px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  margin-top: 15px;
+  box-shadow: 10px 10px 10px rgb(110, 110, 110);
+}
+
+.medical-bodies-name{
+ 
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+.body-box{
+ 
+  padding: 5px;
+  background-color: rgb(15, 4, 105);
+  border-radius: 10px;
+  color: white;
+  box-shadow: 6px 6px 6px rgb(158, 156, 156);
+}
+
+.area{
+  background-color: rgb(106, 0, 106);
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 25px;
+  color: white;
+  box-shadow: 10px 10px 10px rgb(112, 111, 111);
+}
+
+
+tr:nth-child(even) {
+  background-color: #d7d9f5;
+  
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+td,th{
+  /* border: 1px solid black; */
+  text-align: center;
+  padding: 14px;
+  font-size: 20px;
+}
+td{
+  box-shadow: 5px 5px 5px rgb(121, 121, 121);
+  border-radius: 5px;
+}
+th{
+  background-color: rgb(36, 39, 65);
+  color: white;
+  border-radius: 15px;
+}
+
+.attach-table-information{
+  width: 100%;
+}
+
+.attach-table-information tr:nth-child(even) {
+  background-color: #e6ecff;
+}
+
+.attach-table-information table{
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.attach-table-information td,th{
+  /* border: 1px solid black; */
+  text-align: center;
+  padding: 14px;
+  font-size: 23px;
+}
+
+.table-original-of-medical-bodies{
+  width: 80%;
+  height: 100%;
+}
+
+
+.send-alert-message{
+  height: 100%;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+  font-size: 25px;
+  gap: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 10px 10px rgb(113, 113, 113);
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+.cautation-message{
+  box-shadow: 5px 5px 5px rgb(86, 86, 86);
+  padding: 9px;
+  background-color: rgb(5, 5, 94);
+  color: white;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+
+}
+
+
+.all-the-viewData-heading{
+
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 3px;
+  margin-top: -80px;
+  background-color: rgb(2, 2, 40);
+}
+
+.back-Button{
+  border: 1px solid black;
+  padding: 5px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 100px;
+  background-color: rgb(255, 0, 0);
+  border-radius: 10px;
+}
+
+.back-btn-Link{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+
+}

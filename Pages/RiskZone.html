@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RiskZone</title>
+  <link rel="stylesheet" href="../CSS/RiskZone.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  <script nonce="undefined" src="https://cdn.zingchart.com/zingchart.min.js"></script>
+</head>
+<body>
+  <div class="view-risk-zone-main-container">
+
+
+    <!-- <div class="heaing-section-risk-zone"></div> -->
+
+
+    <div class="map-and-the-guied-section">
+
+      <div class="map-section">
+
+        <!-- map section -->
+
+      </div>
+
+      <div class="guied-section">
+
+        <div class="guied-section-childs-part">
+          <div class="guied-box" id="red"></div>
+          <div class="text-guide" >Red :- Highly Infected Area of City</div>
+        </div>
+        <div class="guied-section-childs-part">
+          <div class="guied-box"  id="orange"></div>
+          <div class="text-guide" >Red :- Highly Infected Area of City</div>
+        </div>
+        <div class="guied-section-childs-part">
+          <div class="guied-box" id="yellow"></div>
+          <div class="text-guide" >Red :- Highly Infected Area of City</div>
+        </div>
+        <div class="guied-section-childs-part">
+          <div class="guied-box" id="blue"></div>
+          <div class="text-guide" >Red :- Highly Infected Area of City</div>
+        </div>
+        <div class="guied-section-childs-part">
+          <div class="guied-box" id="green"></div>
+          <div class="text-guide" >Red :- Highly Infected Area of City</div>
+        </div>
+        <div class="show-an-pieChart-toShow-Data">
+          <!-- Pie Chart section -->
+          <canvas id="myChartOne" style="width:100%;max-width:600px"></canvas>
+        </div>
+
+      </div>
+
+    </div>
+    
+
+    <div class="zone-guide-section">Zone Color and Meaning Information Guide</div>
+
+    <div class="table-section-risk-zone">
+
+
+      <table>
+        <tr>
+          <th>Zone-Color-One</th>
+          <th>Zone-Color-One</th>
+          <th>Zone-Color-One</th>
+          <th>Zone-Color-One</th>
+          <th>Zone-Color-One</th>
+   
+        </tr>
+        <tr>
+          <td>AreaNameOne</td>
+          <td>AreaNameTwo</td>
+          <td>AreaNameThree</td>
+          <td>AreaNameFour</td>
+          <td>AreaNameFive</td>
+         
+        </tr>
+        <tr>
+          <td>messageOne</td>
+          <td>messageOne</td>
+          <td>messageOne</td>
+          <td>messageOne</td>
+          <td>messageOne</td>
+       
+        </tr>
+        <tr>
+          <td><button class="send-responce-table-section">Send Response</button></td>
+          <td><button class="send-responce-table-section">Send Response</button></td>
+          <td><button class="send-responce-table-section">Send Response</button></td>
+          <td><button class="send-responce-table-section">Send Response</button></td>
+          <td><button class="send-responce-table-section">Send Response</button></td>
+        </tr>
+       
+      
+      </table>
+
+    </div>
+
+    <div class="line-seperating-zone"></div>
+
+  </div>
+
+
+</body>
+
+<script>
+  var xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
+  var yValues = [55, 49, 44, 24, 15];
+  var barColors = [
+    "#b91d47",
+    "#00aba9",
+    "#2b5797",
+    "#e8c3b9",
+    "#1e7145"
+  ];
+  
+  new Chart("myChartOne", {
+    type: "pie",
+    data: {
+      labels: xValues,
+      datasets: [{
+        backgroundColor: barColors,
+        data: yValues
+      }]
+    },
+    options: {
+      title: {
+        display: true,
+        text: "World Wide Wine Production 2018"
+      }
+    }
+  });
+
+
+
+
+
+  // map section :: 
+
+
+  
+  </script>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <meta charset="utf-8">
+  <title>AI Predication Chart</title>
+ 
+  <script nonce="undefined" src="https://cdn.zingchart.com/zingchart.min.js"></script>
+  <link rel="stylesheet" href="../CSS/AIPredication.css">
+
+</head>
+ 
+<body>
+  <div class="ai-outbreak-pre">
+
+    <div class="heading-ai-predication">AI Outbreak Predication</div>
+    
+    <div class="graph-of-chart">
+      <div id='myChart'></div>
+    </div>
+   
+    <div class="table-section-of-predication">
+      <table>
+        <tr>
+          <th>Diseases Type</th>
+          <th>Todays Registerd</th>
+          <th>Yesterday Registerd</th>
+          <th>Weekly Registerd</th>
+          <th>Monthly Registerd</th>
+          <th>Outbreak Prediction(%)</th>
+        </tr>
+        <tr>
+          <td>Eye Flu</td>
+          <td>35</td>
+          <td>20</td>
+          <td>123</td>
+          <td>563</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>Dengu</td>
+          <td>10</td>
+          <td>7</td>
+          <td>34</td>
+          <td>112</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>Maleria</td>
+          <td>12</td>
+          <td>15</td>
+          <td>70</td>
+          <td>356</td>
+          <td>40</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  
+  <script>
+    ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
+    var myConfig = {
+      "type": "mixed",
+      "title": {
+        "text": ""
+      },
+      "scale-x": {
+        "labels": ["Start", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "End"],
+        "label": {
+          "text": "scale-x"
+        }
+      },
+      "scale-y": {
+        "values": "0:200:50",
+        "label": {
+          "text": "scale-y"
+        }
+      },
+      "scale-y-2": {
+        "values": "0:100:25",
+        "label": {
+          "text": "scale-y-2"
+        }
+      },
+      "series": [{
+          "type": "bar",
+          "scales": "scale-x,scale-y",
+          "values": [
+            34, 30, 36, 29, 25, 33, 35, 31, 30, 28,
+            37, 40, 35, 33, 26, 31, 33, 29, 30, 34,
+            33, 25, 15, 23, 41, 29, 17, 29, 12, 39
+          ],
+          "stacked": true,
+          "stack": 1,
+          "bar-width": "80%"
+        },
+        {
+          "type": "bar",
+          "scales": "scale-x,scale-y",
+          "values": [
+            30, 34, 15, 29, 31, 20, 25, 39, 35, 22,
+            26, 27, 31, 34, 30, 32, 29, 24, 21, 34,
+            14, 21, 10, 24, 18, 29, 33, 20, 30, 19
+          ],
+          "stacked": true,
+          "stack": 1,
+          "bar-width": "80%"
+        },
+        {
+          "type": "bar",
+          "scales": "scale-x,scale-y",
+          "values": [
+            3, 5, 2, 1, 9, 7, 6, 4, 5, 2,
+            4, 3, 8, 5, 7, 9, 1, 2, 6, 4,
+            7, 1, 9, 3, 3, 5, 2, 5, 3, 4
+          ],
+          "stacked": true,
+          "stack": 1,
+          "bar-width": "80%"
+        },
+        {
+          "type": "line",
+          "scales": "scale-x,scale-y-2",
+          "values": [
+            75, 81, 73, 69, 79, 83, 92, 74, 68, 78,
+            83, 76, 65, 78, 72, 82, 78, 86, 73, 67,
+            74, 61, 89, 74, 70, 80, 63, 88, 71, 80
+          ],
+          "marker": {
+            "size": 3
+          }
+        },
+        {
+          "type": "line",
+          "scales": "scale-x,scale-y-2",
+          "values": [
+            61, 75, 78, 65, 83, 79, 91, 87, 76, 91,
+            85, 76, 83, 98, 67, 87, 76, 68, 85, 73,
+            83, 95, 71, 84, 90, 88, 73, 82, 62, 90
+          ],
+          "marker": {
+            "size": 3
+          }
+        }
+      ]
+    };
+ 
+    zingchart.render({
+      id: 'myChart',
+      data: myConfig,
+      height: "100%",
+      width: "100%"
+    });
+  </script>
+</body>
+ 
+</html>
