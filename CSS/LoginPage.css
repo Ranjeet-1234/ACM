@@ -432,3 +432,99 @@ form.sign-in-form {
   height: 160px;
   width: 160px;
 }
+
+
+#link-btn{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#set
+{
+    display:block ;
+    position:relative;
+    
+}
+#count
+{
+   display:inline-block;
+   position:relative ;
+   margin:4%; margin-bottom:2%;
+   color:#000; font-size:18px;
+   text-indent:40px;
+   font-weight:bolder;
+   
+}
+#see
+{
+    display:inline-block;
+    color:gray;
+    margin:auto; 
+    float: right;
+    margin-right:40px;
+    margin-top:10px;
+    cursor:pointer; 
+    transition-duration:0.2s;
+}
+input[id='password']
+{
+    padding: 10px;
+    border:none; 
+    width:80%;
+    outline:none;
+
+    display:block; 
+    position:relative;
+    font-size:27px;
+    text-align:center;
+    top:50px;
+    margin-top: -20px;
+    margin-left:35px;
+    margin-bottom:40px;
+    user-select:auto;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition-duration:600ms;
+}
+i
+{
+    font-size:23px;
+    transition-duration:600ms;    
+}
+#check0,#check1,#check2,#check3,#check4
+{
+   display:block;
+   position:relative;
+   margin:4%;
+   color:red; font-size:18px;
+   width:92% ;
+   
+}
+span
+{
+    margin:10px;
+    font-weight: bold;
+}
+
+
+#password{
+  margin-top: -100px;
+  margin-left: 50px;
+  width: 200px;
+  height: 35px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: start;
+  font-weight: bold;
+}
+
+.info-section{
+  width: 400px;
+  text-align: start;
+  margin-left: 120px;
+}
+#username{
+  font-size: 20px;
+  font-weight: 100;
+}

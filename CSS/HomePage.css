@@ -19,9 +19,9 @@ i{
 .container{
     display: grid;
     grid-template-columns: 0.8fr 2fr 3fr;
-    height: 1000px;
+    /* height: 2000px; */
     margin-top: -30px;
-    background: #edf0ffce;
+    background:linear-gradient(rgb(255, 255, 255) , rgb(255, 251, 251) , rgb(255, 255, 255));
   
   
     
@@ -43,8 +43,9 @@ i{
     flex-direction: column;
     align-items: center;
     /* justify-content: space-between; */
-    gap: 30px;
+    gap: 55px;
     padding: 40px 0 ;
+    background: linear-gradient(rgb(206, 211, 251) , rgb(71, 71, 178) , rgb(50, 50, 154));
     /* background: radial-gradient(rgb(240, 197, 197), rgb(233, 188, 188), rgb(255, 255, 255)); */
 }
 
@@ -82,16 +83,16 @@ i{
   border-radius: 20px;
   width: 100px;
   font-size: 17px;
-  background-color: rgb(9, 9, 161);
+  background-color: rgb(0, 0, 74);
   color: white;
   cursor: pointer;
   border: none;
-  box-shadow: 5px 5px 5px rgb(141, 141, 146);
+  box-shadow: 5px 5px 5px black;
   
 }
 
 .progress-button:hover{
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(150, 0, 0);
 }
 
 .container .left-section .sidebar{
@@ -109,14 +110,14 @@ i{
     cursor: pointer;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    background: linear-gradient(90deg, rgb(74, 16, 68) , rgb(96, 39, 94) , rgb(126, 50, 113));
+    background: linear-gradient(90deg, rgb(89, 3, 81) , rgb(81, 26, 79) , rgb(80, 17, 69));
     padding: 7px;
-    box-shadow: 10px 10px 10px rgb(188, 169, 189);
+    box-shadow: 5px 5px 5px black;
    
 }
 
 .container .left-section .sidebar  :hover{
-    color: rgb(13, 180, 189);
+    color: rgb(255, 82, 2);
 }
 
 
@@ -139,8 +140,8 @@ i{
 
 
 .container .left-section .upgrade{
-    background: #97fce5;
-    box-shadow: 10px 10px 10px rgb(156, 154, 154);
+    background: #ffffff;
+    box-shadow: 10px 10px 30px black;
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -178,12 +179,13 @@ i{
   margin-top: -15px;
   margin-left: 10px;
   border: none;
+  width: 200px;
 }
 
 main{
-    border-right: 2px solid #858484;
-    border-left: 2px solid #858484;
-    padding: 40px 40px 40px 40px;
+    /* border-right: 2px solid #858484;
+    border-left: 2px solid #858484; */
+    padding: 30px 30px 30px 30px;
 }
 
 main header{
@@ -315,11 +317,11 @@ main .analytics .item .progress .progress-bar{
   margin-left: 30px;
   margin-top: 20px;
   padding: 7px;
-  border-end-end-radius: 20px;
-  border-start-start-radius: 20px;
-  background-color: rgb(106, 57, 189);
+  border-radius: 15px;
+  background-color: rgb(40, 123, 51);
   box-shadow: 5px 5px 5px rgb(13, 12, 12);
   height: 75px;
+ 
 }
 
 
@@ -388,21 +390,18 @@ main .analytics .item:nth-child(4){
 
 #daily-news-heading{
   margin-top: 30px;
-  padding: 10px 30px 10px 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(255, 90, 255);
+  padding:15px;
+  text-align: center;
+  background-color: rgb(44, 0, 71);
   border: none;
-  border-radius: 10px;
+  color: white;
   box-shadow: 5px 5px 5px rgb(124, 124, 124);
 }
 
 .main-photocontainer{
-  height: 330px;
+  height: 420px;
   margin-top: 20px;
   background-color: rgb(208, 208, 244);
-  border-radius: 50px;
   box-shadow: 10px 10px 10px rgb(115, 115, 115);
 }
 
@@ -496,14 +495,17 @@ main .planning .item > i{
 /* Chart Section  */
 
 .chart-heading{
-    border-radius: 15px;
+    border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  padding: 10px;
   box-shadow: 5px 5px 5px rgb(80, 80, 80);
-  background-color: rgb(43, 60, 43);
-  color: white;
+  background-color: rgb(29, 28, 76);
+    color: white;
+  
+  gap: 35px;
+  width: 100%;
   
 }
 
@@ -523,13 +525,12 @@ main .planning .item > i{
 }
 
 .charts{
-  margin-top: 15px;  
-  border-radius: 10px;
-  height: 370px;
+  margin-top: 10px;  
   width: 100%;
-  background-color: rgb(237, 253, 255);
+  background-color: rgb(219, 219, 219);
   box-shadow: 10px 10px 10px rgb(108, 108, 108);
 }
+
 
 
 
@@ -591,6 +592,8 @@ tr:nth-child(even) {
 
 .container .right-section{
     padding: 40px 40px 0 40px;
+    background-color: #cbd0f8;
+    background: linear-gradient(90deg, rgb(186, 201, 241) ,rgb(237, 237, 237) , rgb(212, 213, 254));
 }
 
 .container .right-section .top{
@@ -757,3 +760,238 @@ tr:nth-child(even) {
 
 
 
+/* Slider */
+
+
+.slider{
+
+    width: 100%;
+    /* max-width: 100%; */
+    height: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    
+   
+}
+.slider .list{
+    position: absolute;
+    width: max-content;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    transition: 1s;
+}
+.slider .list img{
+    width: 110%;
+    height: 110%;
+    object-fit: cover;
+}
+.slider .buttons{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+.slider .buttons button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(60, 60, 60);
+    color: #ffffff;
+    border: none;
+    font-family: monospace;
+    font-weight: bold;
+}
+.slider .dots{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.slider .dots li{
+    list-style: none;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.slider .dots li.active{
+    width: 30px;
+}
+@media screen and (max-width: 768px){
+    .slider{
+        height: 400px;
+    }
+}
+
+.progress-data-in-table table{
+    width: 100%;
+    margin-top: -27px;
+    /* margin-left: -100px; */
+}
+
+.progress-data-in-table table th{
+    background-color: rgb(32, 32, 56);
+    padding: 11px;
+    color: white;
+}
+
+.progress-data-in-table table div{
+    
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.red{
+    background-color: red;
+    color: white;
+}
+.green{
+    background-color: green;
+    color: white;
+}
+.blue{
+    background-color: blue;
+    color: white;
+}
+.black{
+    background-color: black;
+    color: white;
+}
+
+.progress-data-in-table td{
+    padding: 10px;
+    
+    
+}
+
+.progress-data-in-table tr:nth-child(odd) {
+    color: black;
+   background-color: rgb(199, 199, 255);
+   font-weight: bold;
+  }
+.progress-data-in-table tr:nth-child(even) {
+    background-color: #ffffff;
+    font-weight: bold;
+  }
+
+
+  .btn-view-details{
+    padding: 10px;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: rgb(210, 218, 255);
+    color: black;
+    border-radius:10px ;
+    cursor: pointer;
+    border: none;
+    box-shadow: 4px 4px 4px rgb(25, 25, 25);
+   
+  }
+
+  .close-btn{
+    padding: 13px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgb(248, 0, 0);
+    color: white;
+    border-radius:10px ;
+    cursor: pointer;
+    border: none;
+    box-shadow: 4px 4px 4px rgb(25, 25, 25);
+  }
+
+
+  
+.scroll {
+    white-space: nowrap;
+    margin: 0 2em;
+   
+  }
+  
+  .scroll div {
+    display: flex;
+    gap: 2em;
+  }
+  
+  .scroll p {
+    padding: 20px;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-bottom: 10;
+    line-height: 10px;
+    text-shadow: 5px 5px 5px black;
+  }
+  
+  .RightToLeft {
+    animation: RightToLeft 20s infinite linear;
+  }
+  
+  @keyframes  RightToLeft {
+    from {
+      transform: translateX(75%);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .send-alert-message{
+  
+    width: 600px;
+    /* width: 100%; */
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(247, 0, 0);
+    box-shadow: 10px 10px 10px rgb(39, 39, 39);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+
+  /* x y axis guide */
+  .x-y-axis-guide{
+    border: 1px solid black;
+    display: flex;
+    margin-top: -20px;
+    margin-bottom: 40px ;
+    padding: 10px;
+    font-size: 20px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: rgb(49, 14, 14);
+    color: white;
+  }
+
+  .x-axis{
+    display: flex;
+    gap: 20px;
+  }
+  .y-axis{
+    display: flex;
+    gap: 20px;
+  }
+  .x{
+    background-color: red;
+   
+  }
+  .y{
+    background-color: green;
+  }
